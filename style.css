@@ -1,0 +1,147 @@
+body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 90%);
+    display : flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin: 0;
+}
+.configuration{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 35px;
+}
+.configuration input {
+    border: 0;
+    font-size: 1.2em;
+    width: 10em;
+    margin-right: 2px;
+    padding: 1em;
+}
+.configuration input:first-child {
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.configuration button {
+    padding: 1em;
+    border: 0;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: black;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+#invader{
+    height: calc(100vh - 198px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.line {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pixel {
+    background-color: #838e9a;
+    border: 2px solid #d4dae1;
+    cursor: pointer;
+}
+
+.palette__color {
+    margin: 0.5em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.palette__color:hover {
+    transform: scale(1.2);
+}
+
+.palette__color--active, .palette__color--active:hover {
+    transform: scale(1.4);
+}
+
+.pixel--base, .palette__color--base {
+    background-color: #838e9a;
+    border-color: #d4dae1;
+}
+
+.pixel--white, .palette__color--white{
+    background-color: white;
+    border-color: #838e9a;
+}
+
+.pixel--black, .palette__color--black{
+    background-color: rgb(41, 41, 41);
+    border-color: black;
+}
+
+.pixel--red, .palette__color--red{
+    background-color: red;
+    border-color: rgb(128, 2, 2);
+}
+
+.pixel--pink, .palette__color--pink{
+    background-color: pink;
+    border-color: rgb(233, 107, 128);
+}
+
+.pixel--purple, .palette__color--purple {
+    background-color:purple ;
+    border-color: rgb(90, 5, 90);
+}
+
+.pixel--blue, .palette__color--blue{
+    background-color: blue;
+    border-color: rgb(8, 8, 170);
+}
+
+.pixel--green, .palette__color--green{
+    background-color: green;
+    border-color: rgb(3, 85, 3);
+}
+
+.pixel--yellow, .palette__color--yellow{
+    background-color: yellow;
+    border-color: rgb(173, 173, 0);
+}
+
+.pixel--orange, .palette__color--orange{
+    background-color: orange;
+    border-color: rgb(177, 115, 2);
+}
+
+.pixel--brown, .palette__color--brown{
+    background-color: rgb(165, 92, 49);
+    border-color: rgb(97, 54, 34);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+#creator{
+    position: fixed;
+    bottom: 15px;
+    right: 5%;
+    font-family: 'Covered By Your Grace';
+    font-size: 2em;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+.palette {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+}
